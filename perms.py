@@ -29,7 +29,7 @@ def main():
 	Main function to set permissions on specified files and directories.
 	"""# Only attempt to set permissions on Unix-like systems, not Windows (os.name == "nt")
 	if os.name == "nt":
-		print(f"Skipped setting Unix permissions on Windows for: {os.path.basename(path)}.")
+		print(f"Skipped setting Unix permissions on Windows.")
 	else:
 		# 777 in octal
 		permission_code = 0o777 
